@@ -214,28 +214,35 @@
 
 
             
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
   <div class="portfolio-content h-100">
-    <!-- Give the image a unique ID -->
-    <img id="appImage1" src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+    <!-- Image with ID so we can copy it -->
+    <img id="appImage1" src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="App 1">
     
     <div class="portfolio-info">
       <h4>App 1</h4>
       <p>Lorem ipsum, dolor sit amet consectetur</p>
 
-      <!-- Zoom icon (unchanged) -->
-      <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+      <!-- Zoom Icon (for all devices) -->
+      <a href="assets/img/portfolio/app-1.jpg" title="Zoom In" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
         <i class="bi bi-zoom-in"></i>
       </a>
 
-      <!-- ✅ Copy Image Button -->
-      <button class="btn btn-sm btn-outline-secondary mt-2" onclick="copyImageToClipboard('appImage1')">
-        <i class="bi bi-clipboard"></i> Copy Image
-      </button>
+      <!-- Copy icon - shown only on desktop -->
+      <a href="javascript:void(0);" onclick="copyImageToClipboard('appImage1')" class="copy-link d-none d-md-inline-block" title="Copy Image">
+        <i class="bi bi-clipboard"></i>
+      </a>
+
+      <!-- Download icon - shown only on mobile -->
+      <a href="assets/img/portfolio/app-1.jpg" download class="d-inline-block d-md-none" title="Download Image">
+        <i class="bi bi-download"></i>
+      </a>
     </div>
   </div>
 </div><!-- End Portfolio Item -->
 
+
+            
 
 
 
@@ -761,9 +768,9 @@
         await navigator.clipboard.write([
           new ClipboardItem({ [blob.type]: blob })
         ]);
-        alert("✅ Image copied to clipboard!");
+        alert("Image copied to clipboard.");
       } catch (err) {
-        alert("❌ Failed to copy image: " + err);
+        alert("Failed to copy image: " + err);
       }
     }, 'image/png');
   }
