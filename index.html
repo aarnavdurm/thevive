@@ -214,35 +214,33 @@
 
 
             
-         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-  <div class="portfolio-content h-100 position-relative">
-    <!-- Image with ID for JS -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+  <div class="portfolio-content h-100">
+    <!-- Image with ID so we can copy it -->
     <img id="appImage1" src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="App 1">
-
-    <!-- Action icons on top of image -->
-    <div class="portfolio-links">
-      <!-- Zoom icon (works everywhere) -->
-      <a href="assets/img/portfolio/app-1.jpg" title="Zoom In" data-gallery="portfolio-gallery-app" class="glightbox">
-        <i class="bi bi-zoom-in"></i>
-      </a>
-
-      <!-- Copy (Desktop only) -->
-      <a href="javascript:void(0);" title="Copy Image" onclick="copyImageToClipboard('appImage1')" class="d-none d-md-inline-block">
-        <i class="bi bi-clipboard"></i>
-      </a>
-
-      <!-- Download (Mobile only) -->
-      <a href="assets/img/portfolio/app-1.jpg" download title="Download Image" class="d-inline-block d-md-none">
-        <i class="bi bi-download"></i>
-      </a>
-    </div>
-
+    
     <div class="portfolio-info">
       <h4>App 1</h4>
       <p>Lorem ipsum, dolor sit amet consectetur</p>
+
+      <!-- Zoom Icon (for all devices) -->
+      <a href="assets/img/portfolio/app-1.jpg" title="Zoom In" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+        <i class="bi bi-zoom-in"></i>
+      </a>
+
+      <!-- Copy icon - shown only on desktop -->
+      <a href="javascript:void(0);" onclick="copyImageToClipboard('appImage1')" class="copy-link d-none d-md-inline-block" title="Copy Image">
+        <i class="bi bi-clipboard"></i>
+      </a>
+
+      <!-- Download icon - shown only on mobile -->
+      <a href="assets/img/portfolio/app-1.jpg" download class="d-inline-block d-md-none" title="Download Image">
+        <i class="bi bi-download"></i>
+      </a>
     </div>
   </div>
 </div><!-- End Portfolio Item -->
+
 
 
             
