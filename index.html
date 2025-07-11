@@ -215,20 +215,21 @@
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
   <div class="portfolio-content h-100">
-    
-    <!-- WRAP image + icon overlay in this new div -->
-    <div class="image-wrapper position-relative">
+
+    <!-- 🔧 Image + overlay icon wrapper -->
+    <div class="image-wrapper">
       <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="App 1">
 
-      <!-- Centered Icon -->
-      <div class="icon-overlay">
-        <a href="assets/img/portfolio/app-1.jpg" title="Zoom In" data-gallery="portfolio-gallery-app" class="glightbox">
-          <i class="bi bi-zoom-in"></i>
-        </a>
-      </div>
+      <!-- ✅ Centered Zoom Icon -->
+      <a href="assets/img/portfolio/app-1.jpg"
+         title="Zoom In"
+         data-gallery="portfolio-gallery-app"
+         class="glightbox icon-overlay">
+        <i class="bi bi-zoom-in"></i>
+      </a>
     </div>
 
-    <!-- Text section below image -->
+    <!-- 📄 Text content below -->
     <div class="portfolio-info">
       <h4>App 1</h4>
       <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -779,7 +780,6 @@
   .image-wrapper {
     position: relative;
     width: 100%;
-    overflow: hidden;
   }
 
   .icon-overlay {
@@ -788,23 +788,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-  }
-
-  .icon-overlay a {
-    font-size: 28px;
-    color: white;
     background: rgba(0, 0, 0, 0.6);
     padding: 12px;
     border-radius: 50%;
-    text-align: center;
-    display: inline-block;
+    color: white;
+    font-size: 24px;
     transition: background 0.3s ease;
   }
 
-  .icon-overlay a:hover {
+  .icon-overlay:hover {
     background: #0d6efd;
   }
 </style>
+
 
 </body>
 
