@@ -194,53 +194,43 @@ Shop (linking to your Vinted/eBay pages)
 <section id="shop" class="shop-section section-bg py-5">
   <div class="container text-center" data-aos="fade-up">
     <h2 class="mb-4">Shop</h2>
-    <p class="mb-4">Find our latest items on:</p>
+    <p class="mb-4">Find our items on:</p>
 
     <div class="d-flex justify-content-center flex-wrap gap-4">
       <!-- eBay Button -->
-      <a href="https://www.ebay.co.uk/usr/your-shop" target="_blank" class="btn shop-btn">
+      <a href="https://www.ebay.co.uk/usr/your-shop" target="_blank" class="btn btn-light shop-btn">
         <img src="assets/img/ebay-logo.png" alt="eBay" class="shop-btn-logo">
       </a>
 
       <!-- Vinted Button -->
-      <a href="https://www.vinted.co.uk/member/your-shop" target="_blank" class="btn shop-btn">
+      <a href="https://www.vinted.co.uk/member/your-shop" target="_blank" class="btn btn-light shop-btn">
         <img src="assets/img/vinted-logo.png" alt="Vinted" class="shop-btn-logo">
-        
       </a>
     </div>
   </div>
 </section>
 
-
-
-
-<!-- CSS -->
+<!-- CSS (place in your <style> or CSS file) -->
 <style>
 .shop-section {
   background-color: #f9f9f9;
 }
 
 .shop-btn {
-  background-color: #000;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .shop-btn:hover {
-  height: 60px; /* Adjust as needed: 60–80px is usually clean */
-  transition: transform 0.2s ease;
-  border-radius: 12px;
+  transform: scale(1.05);
+  background-color: #e0e0e0;
 }
 
 .shop-btn-logo {
-  height: 32px;
-  width: auto;
+  height: 48px; /* adjust size here (48–64px works well) */
+  display: block;
 }
 </style>
 
