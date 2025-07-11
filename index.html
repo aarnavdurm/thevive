@@ -10,7 +10,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon1.png" rel="icon">
-  <link href="assets/img/apple-touch-icon1.png" rel="apple-touch-icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -188,41 +188,40 @@
 
     </section><!-- /Stats Section -->
 
-   <!-- ======= Shop Section ======= -->
+   <<!-- ======= Shop Section ======= -->
 <section id="shop" class="shop-section section-bg py-5">
   <div class="container text-center" data-aos="fade-up">
     <h2 class="mb-4">Shop</h2>
     <p class="mb-4">Visit our shops on eBay and Vinted to browse all our latest items!</p>
 
-    <div class="btn-group" role="group" aria-label="Shop links">
-      <a href="https://www.ebay.co.uk/usr/your-shop" target="_blank" class="btn btn-primary d-flex align-items-center justify-content-center mx-2 px-4">
-        <img src="assets/img/ebay-logo.png" alt="" style="height: 24px; margin-right: 8px;">
-      
+    <div class="d-flex justify-content-center flex-wrap gap-4">
+      <a href="https://www.ebay.co.uk/usr/your-shop" target="_blank" class="btn btn-primary d-flex align-items-center px-5 py-3" style="font-size: 1.2rem;">
+        <img src="assets/img/ebay-logo.png" alt="eBay" style="height: 32px; margin-right: 12px;">
+        Visit eBay Shop
       </a>
-      <a href="https://www.vinted.co.uk/member/your-shop" target="_blank" class="btn btn-success d-flex align-items-center justify-content-center mx-2 px-4">
-        <img src="assets/img/vinted-logo.png" alt="" style="height: 24px; margin-right: 8px;">
-      
+
+      <a href="https://www.vinted.co.uk/member/your-shop" target="_blank" class="btn btn-success d-flex align-items-center px-5 py-3" style="font-size: 1.2rem;">
+        <img src="assets/img/vinted-logo.png" alt="Vinted" style="height: 32px; margin-right: 12px;">
+        Visit Vinted Shop
       </a>
     </div>
   </div>
 </section>
 
-<!-- Add this CSS to your style block or CSS file -->
+<!-- Optional additional CSS -->
 <style>
 .shop-section {
   background-color: #f9f9f9;
 }
+
 .shop-section .btn {
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
-.shop-section .btn-primary:hover {
-  background-color: #004085;
-}
-.shop-section .btn-success:hover {
-  background-color: #19692c;
+
+.shop-section .btn:hover {
+  transform: scale(1.05);
 }
 </style>
 
