@@ -188,40 +188,50 @@
 
     </section><!-- /Stats Section -->
 
-  <!-- ======= Shop Section ======= -->
+<!-- ======= Shop Section ======= -->
 <section id="shop" class="shop-section section-bg py-5">
   <div class="container text-center" data-aos="fade-up">
     <h2 class="mb-4">Shop</h2>
-    <p class="mb-4">Check out our products on these platforms:</p>
+    <p class="mb-4">Find our items on:</p>
 
     <div class="d-flex justify-content-center flex-wrap gap-4">
-      <a href="https://www.ebay.co.uk/usr/your-shop" target="_blank">
-        <img src="assets/img/ebay-logo.png" alt="eBay" class="shop-logo">
+      <!-- eBay Button -->
+      <a href="https://www.ebay.co.uk/usr/your-shop" target="_blank" class="btn btn-light shop-btn">
+        <img src="assets/img/ebay-logo.png" alt="eBay" class="shop-btn-logo">
       </a>
 
-      <a href="https://www.vinted.co.uk/member/your-shop" target="_blank">
-        <img src="assets/img/vinted-logo.png" alt="Vinted" class="shop-logo">
+      <!-- Vinted Button -->
+      <a href="https://www.vinted.co.uk/member/your-shop" target="_blank" class="btn btn-light shop-btn">
+        <img src="assets/img/vinted-logo.png" alt="Vinted" class="shop-btn-logo">
       </a>
     </div>
   </div>
 </section>
 
-<!-- CSS (add to your main CSS file or inside <style> tag) -->
+<!-- CSS (place in your <style> or CSS file) -->
 <style>
 .shop-section {
   background-color: #f9f9f9;
 }
 
-.shop-logo {
-  height: 60px; /* Adjust as needed: 60–80px is usually clean */
-  transition: transform 0.2s ease;
+.shop-btn {
+  padding: 15px 20px;
   border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-.shop-logo:hover {
-  transform: scale(1.08);
+.shop-btn:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0;
+}
+
+.shop-btn-logo {
+  height: 48px; /* adjust size here (48–64px works well) */
+  display: block;
 }
 </style>
+
 
 
 
